@@ -39,7 +39,7 @@ def gaussseidel(A, b, x0, eps, N):
             S = 0
             for j in range(i+1,n):
                 S += N[i][j] * x[j]
-            x[i] = (b[i] - S - DM[i][i-1] * x0[i]) / DM[i][i]
+            x[i] = (b[i] - DM[i][i-1] * x[i] - S) / DM[i][i]
         if(max(abs(x - x0)) < eps):
             return x
         x0 = x
