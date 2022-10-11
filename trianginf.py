@@ -15,3 +15,6 @@ def trianginf(T, b):
 
 # x=trianginf(array([[4,0,0],[3,-3,0],[-1,1,1]]), array([8,9,-2]))
 # print(x)
+
+# x=trianginf(array([[1,1,-1],[2,-1,1],[-1,2,2]]), array([-2, 0, 0]))
+# print(x)
